@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Natural Disaster Prediction & Management</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      margin: 20px;
+      color: #003366;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form, .alert-section, .safety-tips {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-top: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 15px;
+      background-color: #003366;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Natural Disaster Prediction & Management System</h1>
+
+  <form>
+    <h2>Disaster Monitoring Input</h2>
+
+    <label for="region">Region:</label>
+    <input type="text" id="region" name="region" placeholder="Enter your region">
+
+    <label for="disaster">Type of Disaster:</label>
+    <select id="disaster" name="disaster">
+      <option value="earthquake">Earthquake</option>
+      <option value="flood">Flood</option>
+      <option value="cyclone">Cyclone</option>
+      <option value="wildfire">Wildfire</option>
+    </select>
+
+    <label for="intensity">Predicted Intensity (1-10):</label>
+    <input type="number" id="intensity" name="intensity" min="1" max="10">
+
+    <button type="submit">Submit Data</button>
+  </form>
+
+  <div class="alert-section">
+    <h2>Live Alerts</h2>
+    <p><strong>Region:</strong> Coastal Area</p>
+    <p><strong>Alert:</strong> Cyclone warning issued. Evacuate low-lying areas.</p>
+  </div>
+
+  <div class="safety-tips">
+    <h2>General Safety Tips</h2>
+    <ul>
+      <li>Stay informed via official news and weather channels.</li>
+      <li>Keep an emergency kit ready with food, water, and first aid.</li>
+      <li>Know evacuation routes and emergency contacts.</li>
+    </ul>
+  </div>
+
+</body>
+</html>
